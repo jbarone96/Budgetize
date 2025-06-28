@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Custom global styles (keep this minimal or use Tailwind classes instead) */
+body {
+  @apply bg-gray-100 text-gray-900 font-sans;
+}
+:root {
+  --chart-text-color: #000000;
+}
+.dark {
+  --chart-text-color: #ffffff;
+}

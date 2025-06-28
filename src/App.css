@@ -1,0 +1,4 @@
+/* Optional — only if you need to override Tailwind or apply global layout tweaks */
+#root {
+  @apply max-w-7xl mx-auto px-4;
+}

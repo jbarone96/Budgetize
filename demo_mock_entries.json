@@ -1,0 +1,562 @@
+[
+  {
+    "id": "dc48de4c-855c-480c-a4d9-ed668be61e08",
+    "type": "Expense",
+    "label": "Groceries",
+    "amount": 285.21,
+    "date": "2025-03-02",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "10411a54-977b-4572-a2f9-0d0d93616860",
+    "type": "Expense",
+    "label": "Transportation",
+    "amount": 77.61,
+    "date": "2025-04-10",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "990b51f8-7b41-44a8-8bc6-9db0101f1401",
+    "type": "Expense",
+    "label": "Transportation",
+    "amount": 139.37,
+    "date": "2024-06-23",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "b468920a-97d9-423b-869f-805df3e34455",
+    "type": "Expense",
+    "label": "Transportation",
+    "amount": 162.66,
+    "date": "2024-12-11",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "76a13ac7-cf1b-46a5-9b04-400a23ad0f9a",
+    "type": "Expense",
+    "label": "Entertainment",
+    "amount": 240.07,
+    "date": "2024-08-17",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "175a5278-f3db-47d3-a8df-813d6508c5da",
+    "type": "Expense",
+    "label": "Groceries",
+    "amount": 38.41,
+    "date": "2024-10-24",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "07711fd7-7200-4f34-9d84-a729c029c96d",
+    "type": "Expense",
+    "label": "Dining",
+    "amount": 221.58,
+    "date": "2025-02-08",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "46b53000-11d6-4620-8521-e6d996abae2f",
+    "type": "Expense",
+    "label": "Groceries",
+    "amount": 185.68,
+    "date": "2024-08-26",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "76522799-a7fc-4c9d-b0cf-d6e87b041b0c",
+    "type": "Expense",
+    "label": "Utilities",
+    "amount": 188.19,
+    "date": "2025-06-04",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "2865e9d9-914a-454d-b735-aa3b56830c6f",
+    "type": "Expense",
+    "label": "Dining",
+    "amount": 81.95,
+    "date": "2024-11-24",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "73f8bfbe-6f79-413b-9c58-ac02ce1cb231",
+    "type": "Expense",
+    "label": "Dining",
+    "amount": 225.52,
+    "date": "2025-04-23",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "3b3167f1-4fb9-46e3-8a44-b6f3be82db6f",
+    "type": "Expense",
+    "label": "Healthcare",
+    "amount": 232.4,
+    "date": "2025-03-17",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "6960e837-6a89-4bca-a111-51710a07e473",
+    "type": "Expense",
+    "label": "Transportation",
+    "amount": 98.42,
+    "date": "2024-08-03",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "e374af7a-0cc0-48f7-aad5-98fc5bdaa333",
+    "type": "Expense",
+    "label": "Groceries",
+    "amount": 49.75,
+    "date": "2024-09-21",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "d2019acf-9d87-41f6-9501-daae8b04da8a",
+    "type": "Expense",
+    "label": "Healthcare",
+    "amount": 113.45,
+    "date": "2025-04-16",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "b21d6859-20c8-456d-b8aa-4f1891f2cab8",
+    "type": "Expense",
+    "label": "Transportation",
+    "amount": 261.9,
+    "date": "2025-06-12",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "bdebc78c-4e7e-4e14-b199-6d4c3776e4c0",
+    "type": "Expense",
+    "label": "Dining",
+    "amount": 148.32,
+    "date": "2024-09-05",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "91970323-807d-49fb-aeb6-9664f03aeb7e",
+    "type": "Expense",
+    "label": "Healthcare",
+    "amount": 179.04,
+    "date": "2025-04-06",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "ad0dd97b-43dc-4e95-9f76-2efd96558d5c",
+    "type": "Expense",
+    "label": "Dining",
+    "amount": 182.87,
+    "date": "2025-04-29",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "2bced2ba-09fb-445d-ac06-d93823a056bc",
+    "type": "Expense",
+    "label": "Entertainment",
+    "amount": 287.68,
+    "date": "2025-05-24",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "b7937b83-dae8-411a-98eb-17f5bb4fcd60",
+    "type": "Expense",
+    "label": "Groceries",
+    "amount": 293.39,
+    "date": "2024-10-29",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "d381fc68-e905-49b9-bf52-c8b79e6b509b",
+    "type": "Expense",
+    "label": "Healthcare",
+    "amount": 55.7,
+    "date": "2025-03-28",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "0da2a854-3188-4d67-b868-9d2226e54f60",
+    "type": "Expense",
+    "label": "Entertainment",
+    "amount": 133.16,
+    "date": "2025-02-14",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "a1f0a2f4-9679-446f-976c-a01bd0181460",
+    "type": "Expense",
+    "label": "Transportation",
+    "amount": 235.83,
+    "date": "2025-06-07",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "84283a3d-ed7a-46bc-b5d3-50abf905e086",
+    "type": "Expense",
+    "label": "Transportation",
+    "amount": 200.23,
+    "date": "2024-08-13",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "2784489a-f58c-4a7a-a535-902777705d7f",
+    "type": "Expense",
+    "label": "Dining",
+    "amount": 184.69,
+    "date": "2025-05-14",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "029ec03c-c65c-4ca1-9075-d7a94a15470a",
+    "type": "Expense",
+    "label": "Groceries",
+    "amount": 164.7,
+    "date": "2025-03-24",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "e9e191f7-a341-4bfc-9107-dafecf086d10",
+    "type": "Expense",
+    "label": "Groceries",
+    "amount": 139.99,
+    "date": "2024-11-19",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "28ba88b6-7b56-435c-942d-9b471c2eb6ca",
+    "type": "Expense",
+    "label": "Groceries",
+    "amount": 218.41,
+    "date": "2024-11-08",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "78676f41-f096-4d2a-b00a-dec8b660bb41",
+    "type": "Expense",
+    "label": "Healthcare",
+    "amount": 57.69,
+    "date": "2025-04-27",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "5dd1bf43-58d3-4101-a0e2-ad2fa61d2186",
+    "type": "Expense",
+    "label": "Healthcare",
+    "amount": 105.62,
+    "date": "2025-02-06",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "c27e4c14-1b68-4ef7-a68f-15c68049d80f",
+    "type": "Expense",
+    "label": "Utilities",
+    "amount": 108.99,
+    "date": "2025-01-03",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "be3814c7-8d6a-454b-8b55-a77ad81de0e1",
+    "type": "Expense",
+    "label": "Utilities",
+    "amount": 228.47,
+    "date": "2025-01-23",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "8cb860b1-7a48-4dc7-910c-6d8fc78e0e3f",
+    "type": "Expense",
+    "label": "Groceries",
+    "amount": 273.34,
+    "date": "2024-09-01",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "0115b4d6-1209-4d72-9330-e2d13a48bdfb",
+    "type": "Expense",
+    "label": "Transportation",
+    "amount": 45.3,
+    "date": "2025-01-09",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "7e3eda8d-85d7-4d01-9c4f-0e031749fd10",
+    "type": "Expense",
+    "label": "Transportation",
+    "amount": 79.86,
+    "date": "2024-06-23",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "1bb61fae-4579-48a8-96d6-81f893bdd61a",
+    "type": "Expense",
+    "label": "Entertainment",
+    "amount": 247.28,
+    "date": "2025-06-10",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "512a70f4-b6f4-4a6b-87c8-6b11b4ef31e2",
+    "type": "Expense",
+    "label": "Dining",
+    "amount": 134.68,
+    "date": "2024-08-20",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "9c67d3f9-5c53-4f26-ab8c-26c9b5eea1cf",
+    "type": "Expense",
+    "label": "Groceries",
+    "amount": 251.97,
+    "date": "2025-06-10",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "d0b318f1-0807-4be0-83ac-8edddb083d1c",
+    "type": "Expense",
+    "label": "Healthcare",
+    "amount": 134.96,
+    "date": "2024-11-07",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "8bf9a50c-fb52-4d17-a63b-04625975daaf",
+    "type": "Expense",
+    "label": "Entertainment",
+    "amount": 69.33,
+    "date": "2024-08-18",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "f9ab9e00-59c4-404c-aae8-e4b20d16ae58",
+    "type": "Expense",
+    "label": "Utilities",
+    "amount": 220.86,
+    "date": "2025-03-30",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "5ec85914-d3fc-4c5e-9392-fac95d6d5ceb",
+    "type": "Expense",
+    "label": "Transportation",
+    "amount": 259.04,
+    "date": "2025-05-30",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "978a6c46-f5f2-49d9-9f4d-5d05617a152f",
+    "type": "Expense",
+    "label": "Utilities",
+    "amount": 157.67,
+    "date": "2024-08-16",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "cd9ee00a-ba3f-4e4f-9e00-9c34fdc1eb8a",
+    "type": "Expense",
+    "label": "Transportation",
+    "amount": 250.89,
+    "date": "2024-11-18",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "95f45c44-fabb-4ed9-a8c3-7f6c95b2f72f",
+    "type": "Expense",
+    "label": "Groceries",
+    "amount": 202.46,
+    "date": "2024-10-15",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "41d03263-20dd-45e4-98b1-5db5cecc4e91",
+    "type": "Expense",
+    "label": "Healthcare",
+    "amount": 123.92,
+    "date": "2024-12-05",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "17a84142-09eb-4f23-b824-2b5dfb80fbaa",
+    "type": "Expense",
+    "label": "Entertainment",
+    "amount": 74.49,
+    "date": "2024-08-12",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "0e3881d0-ebbd-47b1-92fd-506b90538dce",
+    "type": "Expense",
+    "label": "Entertainment",
+    "amount": 88.81,
+    "date": "2024-08-27",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "758af67b-df7d-4081-bc49-f2f49c5ed836",
+    "type": "Expense",
+    "label": "Transportation",
+    "amount": 229.27,
+    "date": "2025-03-27",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "526c7a5d-0b1e-4a0d-91f0-9f134299d6e7",
+    "type": "Income",
+    "label": "Bonus",
+    "amount": 1526.2,
+    "date": "2025-05-18",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "ba5dd04b-5bb7-4bbd-a95a-3ba031c04991",
+    "type": "Income",
+    "label": "Bonus",
+    "amount": 1427.65,
+    "date": "2024-12-19",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "b5766ab8-9b72-4a1a-82f9-2fe41d6d0e3c",
+    "type": "Income",
+    "label": "Investment",
+    "amount": 4704.19,
+    "date": "2024-10-29",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "4033bb7f-e3f5-47d9-bbbb-c5870d480d09",
+    "type": "Income",
+    "label": "Investment",
+    "amount": 1872.53,
+    "date": "2024-08-05",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "83302d9c-f699-4e32-ae78-deb586e4ca1a",
+    "type": "Income",
+    "label": "Freelance",
+    "amount": 2213.25,
+    "date": "2025-06-11",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "51dc9df0-847b-467b-8ab1-4eab8319ec31",
+    "type": "Income",
+    "label": "Freelance",
+    "amount": 996.85,
+    "date": "2024-10-07",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "80bf51ab-417f-44f1-a192-d5bbdf680555",
+    "type": "Income",
+    "label": "Freelance",
+    "amount": 3066.92,
+    "date": "2025-04-17",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "039365bf-a07c-4a13-8079-07111ad33e8e",
+    "type": "Income",
+    "label": "Investment",
+    "amount": 1087.05,
+    "date": "2024-10-16",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "69618661-4086-4d24-986c-fa819c34a8db",
+    "type": "Income",
+    "label": "Freelance",
+    "amount": 3271.77,
+    "date": "2025-03-06",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "932e93aa-453a-431d-a7a4-e877a2bc0036",
+    "type": "Income",
+    "label": "Freelance",
+    "amount": 3525.29,
+    "date": "2024-10-24",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "3f02a604-13d2-4bb3-82bb-5e2484c4af76",
+    "type": "Income",
+    "label": "Freelance",
+    "amount": 2227.2,
+    "date": "2025-02-25",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "e28a57c2-99db-4460-8b5c-a740a77f89ab",
+    "type": "Income",
+    "label": "Freelance",
+    "amount": 1008.68,
+    "date": "2025-02-20",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "6fe77334-a6f1-40dd-ad7c-e34715e4968c",
+    "type": "Income",
+    "label": "Freelance",
+    "amount": 3216.54,
+    "date": "2024-07-25",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "ba690a68-c3c3-40b6-aad1-585a6e045e6b",
+    "type": "Income",
+    "label": "Salary",
+    "amount": 3923.98,
+    "date": "2024-10-02",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "c6046fec-62b5-4f32-a94a-6b68995eaa3c",
+    "type": "Income",
+    "label": "Bonus",
+    "amount": 4815.0,
+    "date": "2025-05-12",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "69f41197-91cf-4ef6-83af-b1ea8b0f9530",
+    "type": "Income",
+    "label": "Freelance",
+    "amount": 951.13,
+    "date": "2025-04-27",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "f63f6094-6269-4d46-8990-f1c8ef5409da",
+    "type": "Income",
+    "label": "Freelance",
+    "amount": 3697.51,
+    "date": "2025-04-22",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "493adb90-9ce3-4f44-b01e-ffcb52c38bcb",
+    "type": "Income",
+    "label": "Investment",
+    "amount": 1807.46,
+    "date": "2024-07-25",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "2b1ee784-6ada-4ed1-b2e3-9dac6d5b9198",
+    "type": "Income",
+    "label": "Investment",
+    "amount": 1074.73,
+    "date": "2024-12-14",
+    "userId": "demoUserId"
+  },
+  {
+    "id": "b0ffc6b8-1739-433b-8d82-618f6a22f677",
+    "type": "Income",
+    "label": "Salary",
+    "amount": 599.84,
+    "date": "2024-11-21",
+    "userId": "demoUserId"
+  }
+]

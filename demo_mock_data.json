@@ -1,0 +1,564 @@
+{
+  "transactions": [
+    {
+      "id": "f0231f29-e70a-466e-996f-9eae6e163435",
+      "date": "2025-01-18",
+      "description": "Travel Expense",
+      "amount": 154.53,
+      "category": "Travel",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "fd25d8e4-8cbd-4e97-81ea-e2a3b301e555",
+      "date": "2025-04-02",
+      "description": "Healthcare Expense",
+      "amount": 164.95,
+      "category": "Healthcare",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "7cd7a873-b708-4525-86fe-a6925a3923b2",
+      "date": "2025-02-10",
+      "description": "Travel Expense",
+      "amount": 240.98,
+      "category": "Travel",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "0ab07104-2f0d-4dcd-bd92-cc0fa876276c",
+      "date": "2024-01-05",
+      "description": "Utilities Expense",
+      "amount": 168.31,
+      "category": "Utilities",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "db2b2396-1c75-49be-bc88-4fd3c423a01f",
+      "date": "2024-10-29",
+      "description": "Utilities Expense",
+      "amount": 167.43,
+      "category": "Utilities",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "aa810d60-aae9-4ce8-8d16-afd9fd6c31a9",
+      "date": "2024-09-18",
+      "description": "Travel Expense",
+      "amount": 6.0,
+      "category": "Travel",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "51d45eab-9400-4594-a61c-ed890717a8d3",
+      "date": "2024-03-09",
+      "description": "Groceries Expense",
+      "amount": 72.67,
+      "category": "Groceries",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "f317736a-142c-4f00-8b65-2a0396d41a54",
+      "date": "2024-01-11",
+      "description": "Groceries Expense",
+      "amount": 244.34,
+      "category": "Groceries",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "ae298319-894e-4e5f-86a2-fe6c6d04b7fb",
+      "date": "2024-11-13",
+      "description": "Utilities Expense",
+      "amount": 143.32,
+      "category": "Utilities",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "2ec2b3c8-fc3f-4aef-bac3-cc8f8ac8469b",
+      "date": "2024-09-01",
+      "description": "Healthcare Expense",
+      "amount": 134.01,
+      "category": "Healthcare",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "b99ce4b3-3e41-4c81-ac07-6db9129aa8e4",
+      "date": "2024-04-22",
+      "description": "Shopping Expense",
+      "amount": 186.8,
+      "category": "Shopping",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "09d809eb-96de-4fd7-a2ac-5c6d444124f8",
+      "date": "2024-07-18",
+      "description": "Travel Expense",
+      "amount": 140.17,
+      "category": "Travel",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "d2f84c65-8114-44c2-af81-029c4daf7dc3",
+      "date": "2024-02-29",
+      "description": "Utilities Expense",
+      "amount": 94.41,
+      "category": "Utilities",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "5e0590ab-f68d-4724-9497-9ec09e8e2858",
+      "date": "2024-09-20",
+      "description": "Shopping Expense",
+      "amount": 152.02,
+      "category": "Shopping",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "dd39f121-8fc9-41f6-b4d1-279a1b23e2bb",
+      "date": "2024-05-16",
+      "description": "Entertainment Expense",
+      "amount": 38.62,
+      "category": "Entertainment",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "2ab462de-1c2e-434c-ae66-b160094a12f8",
+      "date": "2024-03-16",
+      "description": "Travel Expense",
+      "amount": 232.61,
+      "category": "Travel",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "85cf74fd-545f-47c0-a3d5-271cbcd5c54c",
+      "date": "2024-11-17",
+      "description": "Travel Expense",
+      "amount": 132.31,
+      "category": "Travel",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "d71a2851-7a86-46bc-8e2b-4e26c6b2c7c5",
+      "date": "2024-03-21",
+      "description": "Healthcare Expense",
+      "amount": 164.66,
+      "category": "Healthcare",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "8c564705-bde5-42ee-84d3-323af3f2c622",
+      "date": "2024-06-04",
+      "description": "Entertainment Expense",
+      "amount": 231.53,
+      "category": "Entertainment",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "8405f51b-1c26-44b0-8224-d96b1704d6aa",
+      "date": "2024-10-16",
+      "description": "Transportation Expense",
+      "amount": 196.95,
+      "category": "Transportation",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "72b2aec8-8697-4408-bd68-fab696b7da08",
+      "date": "2024-01-29",
+      "description": "Entertainment Expense",
+      "amount": 208.17,
+      "category": "Entertainment",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "1c5be50e-d6f6-46f5-a567-a6f1bb8bd5ec",
+      "date": "2024-01-25",
+      "description": "Dining Expense",
+      "amount": 228.17,
+      "category": "Dining",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "02e68c6e-5df5-48bd-b88d-cfca2b78b07b",
+      "date": "2024-07-15",
+      "description": "Transportation Expense",
+      "amount": 176.77,
+      "category": "Transportation",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "397bf539-7177-419b-a9a8-b5d41c966a2d",
+      "date": "2024-01-03",
+      "description": "Transportation Expense",
+      "amount": 243.73,
+      "category": "Transportation",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "85283cbc-ff71-4921-b3f7-a8ad3e6b2903",
+      "date": "2025-04-04",
+      "description": "Groceries Expense",
+      "amount": 140.65,
+      "category": "Groceries",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "6ee2cda4-3d34-44fd-8a83-8ef50ec75e47",
+      "date": "2024-06-15",
+      "description": "Healthcare Expense",
+      "amount": 105.0,
+      "category": "Healthcare",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "0bc8d614-0889-4bb7-af85-49a2ef90f185",
+      "date": "2024-01-29",
+      "description": "Travel Expense",
+      "amount": 135.88,
+      "category": "Travel",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "6ae8b4ff-3eab-4176-8cd2-69cb58782018",
+      "date": "2025-03-17",
+      "description": "Transportation Expense",
+      "amount": 116.88,
+      "category": "Transportation",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "1ea35af0-e912-40f0-8682-a94b06257c74",
+      "date": "2025-01-07",
+      "description": "Savings Expense",
+      "amount": 75.97,
+      "category": "Savings",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "153eec00-0337-403d-9918-531e564b24e6",
+      "date": "2024-02-21",
+      "description": "Healthcare Expense",
+      "amount": 175.71,
+      "category": "Healthcare",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "99b22ec4-dc5c-48b7-8e0f-1346c97921d8",
+      "date": "2025-05-22",
+      "description": "Healthcare Expense",
+      "amount": 168.86,
+      "category": "Healthcare",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "2e4d10f4-eaa2-415e-84bf-bdac9146313a",
+      "date": "2024-03-27",
+      "description": "Shopping Expense",
+      "amount": 157.61,
+      "category": "Shopping",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "39066bc8-d236-4fd0-9daa-0e47c0d7ecb4",
+      "date": "2025-03-19",
+      "description": "Travel Expense",
+      "amount": 158.04,
+      "category": "Travel",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "89521660-a853-4cb5-8904-40f46561beca",
+      "date": "2024-11-04",
+      "description": "Groceries Expense",
+      "amount": 83.12,
+      "category": "Groceries",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "bc84adfb-8cbc-4ffa-9f13-5b0ce8fd18f8",
+      "date": "2024-02-13",
+      "description": "Shopping Expense",
+      "amount": 180.44,
+      "category": "Shopping",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "1716cdc2-c855-4cd3-8858-e80296c362a5",
+      "date": "2025-05-12",
+      "description": "Healthcare Expense",
+      "amount": 19.31,
+      "category": "Healthcare",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "3347e431-d3dd-44e8-9a6a-ed8c49f4b074",
+      "date": "2024-11-25",
+      "description": "Dining Expense",
+      "amount": 162.49,
+      "category": "Dining",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "19535b5a-767b-4960-9520-35a5cb895759",
+      "date": "2024-08-28",
+      "description": "Utilities Expense",
+      "amount": 27.62,
+      "category": "Utilities",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "e97faeb9-a6ee-44e6-a660-3d7324fd84fc",
+      "date": "2024-06-29",
+      "description": "Utilities Expense",
+      "amount": 80.94,
+      "category": "Utilities",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "0bd20412-bb38-499e-ab72-c9a54b7300dd",
+      "date": "2024-10-24",
+      "description": "Entertainment Expense",
+      "amount": 122.3,
+      "category": "Entertainment",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "14e45a58-6929-4c2f-8f56-767b964ea4a2",
+      "date": "2024-08-09",
+      "description": "Groceries Expense",
+      "amount": 185.88,
+      "category": "Groceries",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "53371c56-a05a-4959-9f8a-03390b7d2ba4",
+      "date": "2024-03-15",
+      "description": "Dining Expense",
+      "amount": 83.83,
+      "category": "Dining",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "f8ca83b8-b603-49bc-b500-66179688d077",
+      "date": "2024-08-06",
+      "description": "Healthcare Expense",
+      "amount": 38.94,
+      "category": "Healthcare",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "a1c2fa2f-d182-401b-81bd-5e86c4f2e1ad",
+      "date": "2025-05-12",
+      "description": "Savings Expense",
+      "amount": 131.15,
+      "category": "Savings",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "65165214-9142-4952-a872-3f1731508459",
+      "date": "2025-05-27",
+      "description": "Healthcare Expense",
+      "amount": 184.87,
+      "category": "Healthcare",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "c99c0c22-2bd1-4f04-8d41-61ef9df1a154",
+      "date": "2025-02-22",
+      "description": "Savings Expense",
+      "amount": 219.57,
+      "category": "Savings",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "1624e4f1-115b-459c-9826-7e3f41c801d6",
+      "date": "2025-05-08",
+      "description": "Insurance Expense",
+      "amount": 184.14,
+      "category": "Insurance",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "ae18fa76-d028-4eab-8b8e-cdc1af85e6a4",
+      "date": "2024-02-24",
+      "description": "Utilities Expense",
+      "amount": 25.11,
+      "category": "Utilities",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "cb525f1c-5e8e-4b2a-a67c-6d7be41c75f1",
+      "date": "2024-05-06",
+      "description": "Insurance Expense",
+      "amount": 231.36,
+      "category": "Insurance",
+      "userId": "demoUserId"
+    },
+    {
+      "id": "4431036a-c1db-4126-9239-912a0df409f7",
+      "date": "2024-08-27",
+      "description": "Entertainment Expense",
+      "amount": 88.38,
+      "category": "Entertainment",
+      "userId": "demoUserId"
+    }
+  ],
+  "goals": [
+    {
+      "id": "6d3b3e1e-e08e-48fd-aef1-3c4e05eaebe9",
+      "title": "Emergency Fund",
+      "targetAmount": 3295,
+      "currentAmount": 708,
+      "dueDate": "2026-10-04",
+      "isComplete": false,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "b448ed71-c84e-4d8f-bfa2-b2913db759ad",
+      "title": "Vacation Trip",
+      "targetAmount": 8460,
+      "currentAmount": 624,
+      "dueDate": "2026-06-30",
+      "isComplete": false,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "89114e22-425e-4887-9b96-7b296ad88a08",
+      "title": "New Laptop",
+      "targetAmount": 1372,
+      "currentAmount": 495,
+      "dueDate": "2025-11-27",
+      "isComplete": false,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "0f76c5d5-70ca-4fb2-a1e9-f1cd315d9457",
+      "title": "Car Down Payment",
+      "targetAmount": 7045,
+      "currentAmount": 412,
+      "dueDate": "2026-01-10",
+      "isComplete": false,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "df9058a3-a08b-4fe7-ad38-70eaaf0c9901",
+      "title": "Home Renovation",
+      "targetAmount": 7827,
+      "currentAmount": 150,
+      "dueDate": "2025-07-06",
+      "isComplete": false,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "36f1202c-e9d4-4675-bd02-ab75528b89a1",
+      "title": "Debt Payoff",
+      "targetAmount": 5498,
+      "currentAmount": 928,
+      "dueDate": "2026-08-23",
+      "isComplete": false,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "e93bd395-4f28-4b4b-a441-41c2838374c5",
+      "title": "Christmas Gifts",
+      "targetAmount": 7141,
+      "currentAmount": 498,
+      "dueDate": "2026-04-09",
+      "isComplete": false,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "33f10303-3316-43f9-93a6-96901386571f",
+      "title": "Wedding Fund",
+      "targetAmount": 4969,
+      "currentAmount": 611,
+      "dueDate": "2026-12-28",
+      "isComplete": false,
+      "userId": "demoUserId"
+    }
+  ],
+  "income": [
+    {
+      "id": "56773a41-dc61-478d-b188-fcbaf1cc380e",
+      "date": "2024-09-10",
+      "source": "Paycheck",
+      "amount": 3937,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "415c2ab5-c2f2-4463-b3d2-5b7b503622b1",
+      "date": "2025-04-05",
+      "source": "Paycheck",
+      "amount": 2741,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "431a0883-ab14-49d4-aed7-2f701573ceed",
+      "date": "2024-09-22",
+      "source": "Paycheck",
+      "amount": 2335,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "129dabf5-055b-4945-acd9-cb9326859665",
+      "date": "2025-01-30",
+      "source": "Paycheck",
+      "amount": 3425,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "3e1b388b-370c-451e-a12e-da5c5e205acf",
+      "date": "2025-03-07",
+      "source": "Paycheck",
+      "amount": 3176,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "a99bb86f-069b-4b21-b0d7-3b08770c2518",
+      "date": "2024-11-28",
+      "source": "Paycheck",
+      "amount": 2784,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "808eb8e6-e2b6-4081-85f6-c192b9388ef1",
+      "date": "2024-06-01",
+      "source": "Paycheck",
+      "amount": 3218,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "a118a8fa-621d-46ce-afbe-9489683df171",
+      "date": "2024-06-24",
+      "source": "Paycheck",
+      "amount": 3836,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "14a4be80-81f3-4154-944b-5e8f87d2c344",
+      "date": "2024-09-23",
+      "source": "Paycheck",
+      "amount": 3030,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "4fdff22a-241e-4454-9b22-9005b8fc94e1",
+      "date": "2024-12-16",
+      "source": "Paycheck",
+      "amount": 2034,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "b12952b8-f0f0-48fb-9b3a-2bd4a5fadd1b",
+      "date": "2025-01-07",
+      "source": "Paycheck",
+      "amount": 2563,
+      "userId": "demoUserId"
+    },
+    {
+      "id": "fa7536bb-9a56-4dab-9941-c66aa76a439e",
+      "date": "2024-09-09",
+      "source": "Paycheck",
+      "amount": 3207,
+      "userId": "demoUserId"
+    }
+  ]
+}
