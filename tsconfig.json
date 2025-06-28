@@ -4,13 +4,16 @@
     "module": "ESNext",
     "jsx": "react-jsx",
     "moduleResolution": "node",
+    "lib": ["DOM", "ES2021"],
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noEmit": true,
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "types": ["react", "react-dom"]
   },
-  "include": ["vite-env.d.ts", "src"]
+  "include": ["vite-env.d.ts", "src", "src/@types"]
 }
