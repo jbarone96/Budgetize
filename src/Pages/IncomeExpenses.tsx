@@ -198,6 +198,7 @@ const IncomeExpenses = () => {
 
   const chartOptions: ChartOptions<"bar"> = {
     responsive: true,
+    maintainAspectRatio: false,
     animation: {
       duration: 800,
       easing: "easeOutQuart",
@@ -248,7 +249,7 @@ const IncomeExpenses = () => {
   return (
     <div className="flex min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
       <Sidebar />
-      <main className="flex-1 p-8">
+      <main className="flex-1 p-4 md:p-8">
         <Toaster position="top-right" />
         <h1 className="text-3xl font-bold mb-2 text-center">
           Income & Expenses
@@ -263,37 +264,39 @@ const IncomeExpenses = () => {
           <Spinner />
         ) : (
           <>
-            <div className="w-full max-w-5xl mb-6 bg-white dark:bg-gray-800 rounded-lg p-6 mx-auto text-center">
-              <Bar
-                key={themeKey}
-                data={
-                  data.length === 0
-                    ? {
-                        labels: ["No data"],
-                        datasets: [
-                          {
-                            label: "Income",
-                            data: [0],
-                            backgroundColor: "#34d399",
-                          },
-                          {
-                            label: "Expenses",
-                            data: [0],
-                            backgroundColor: "#f87171",
-                          },
-                        ],
-                      }
-                    : chartData
-                }
-                options={chartOptions}
-              />
+            <div className="w-full max-w-5xl h-[400px] md:h-[500px] mb-6 bg-white dark:bg-gray-800 rounded-lg p-6 mx-auto text-center">
+              <div className="relative w-full h-full">
+                <Bar
+                  key={themeKey}
+                  data={
+                    data.length === 0
+                      ? {
+                          labels: ["No data"],
+                          datasets: [
+                            {
+                              label: "Income",
+                              data: [0],
+                              backgroundColor: "#34d399",
+                            },
+                            {
+                              label: "Expenses",
+                              data: [0],
+                              backgroundColor: "#f87171",
+                            },
+                          ],
+                        }
+                      : chartData
+                  }
+                  options={chartOptions}
+                />
+              </div>
             </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-4 mb-6">
+            <div className="flex flex-wrap items-center justify-center gap-4 mb-6 px-4 text-center">
               <select
                 value={filter}
                 onChange={(e) => setFilter(e.target.value as any)}
-                className="border px-3 py-2 rounded bg-white dark:bg-gray-700 text-black dark:text-white"
+                className="border px-3 py-2 rounded bg-white dark:bg-gray-700 text-black dark:text-white w-full max-w-[200px] text-center"
               >
                 <option value="All">All</option>
                 <option value="Income">Income</option>
@@ -302,7 +305,7 @@ const IncomeExpenses = () => {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as any)}
-                className="border px-3 py-2 rounded bg-white dark:bg-gray-700 text-black dark:text-white"
+                className="border px-3 py-2 rounded bg-white dark:bg-gray-700 text-black dark:text-white w-full max-w-[200px] text-center"
               >
                 <option value="amount">Sort by Amount</option>
                 <option value="date">Sort by Date</option>
@@ -311,19 +314,19 @@ const IncomeExpenses = () => {
                 onClick={() =>
                   setSortOrder((prev) => (prev === "asc" ? "desc" : "asc"))
                 }
-                className="flex items-center gap-1 border px-3 py-2 rounded"
+                className="flex items-center gap-1 border px-3 py-2 rounded w-full max-w-[160px] justify-center text-sm sm:max-w-[180px]"
               >
                 {sortOrder === "asc" ? <ArrowUpCircle /> : <ArrowDownCircle />}{" "}
                 {sortOrder === "asc" ? "Ascending" : "Descending"}
               </button>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-6 w-full max-w-4xl mx-auto text-center">
+            <div className="flex flex-col sm:flex-col md:flex-row md:flex-wrap items-center justify-center gap-4 mb-6 w-full max-w-4xl mx-auto px-4">
               <select
                 name="type"
                 value={form.type}
                 onChange={handleInputChange}
-                className="border px-3 py-2 rounded w-full md:w-auto bg-white dark:bg-gray-700 text-black dark:text-white"
+                className="border px-3 py-2 rounded w-full max-w-[200px] bg-white dark:bg-gray-700 text-black dark:text-white"
               >
                 <option value="Income">Income</option>
                 <option value="Expense">Expense</option>
@@ -333,18 +336,18 @@ const IncomeExpenses = () => {
                 value={form.label}
                 onChange={handleInputChange}
                 placeholder="Label"
-                className="capitalize border px-3 py-2 rounded w-full md:flex-1 bg-white dark:bg-gray-700 text-black dark:text-white"
+                className="capitalize border px-3 py-2 rounded w-full max-w-[300px] bg-white dark:bg-gray-700 text-black dark:text-white"
               />
               <input
                 name="amount"
                 value={form.amount}
                 onChange={handleInputChange}
                 placeholder="Amount"
-                className="border px-3 py-2 rounded w-full md:flex-1 bg-white dark:bg-gray-700 text-black dark:text-white"
+                className="border px-3 py-2 rounded w-full max-w-[300px] bg-white dark:bg-gray-700 text-black dark:text-white"
               />
               <button
                 onClick={handleAddEntry}
-                className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded"
+                className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded w-full max-w-[150px]"
               >
                 Add
               </button>
@@ -353,7 +356,7 @@ const IncomeExpenses = () => {
         )}
 
         {!loading && data.length > 0 && (
-          <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6 w-full flex flex-col items-center">
+          <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6 w-full flex flex-col items-center overflow-x-auto">
             <div className="grid grid-cols-2 gap-6 w-full mb-6 text-center">
               <div>
                 <h2 className="text-lg font-semibold mb-2 text-green-600 dark:text-green-400">
@@ -381,11 +384,11 @@ const IncomeExpenses = () => {
               </div>
             </div>
 
-            <div className="w-full">
+            <div className="w-full overflow-x-auto px-2">
               <h3 className="text-xl font-semibold mb-4 border-b border-gray-300 dark:border-gray-600 pb-1">
                 Entries
               </h3>
-              <div className="grid grid-cols-5 gap-4 text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2 px-1">
+              <div className="min-w-[600px] grid grid-cols-5 gap-4 text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2 px-2">
                 <div>Label</div>
                 <div>Date</div>
                 <div>Type</div>
@@ -396,7 +399,7 @@ const IncomeExpenses = () => {
                 {sortedData.map((entry, index) => (
                   <li
                     key={entry.id}
-                    className="grid grid-cols-5 gap-4 items-center border-b border-gray-300 dark:border-gray-700 py-2"
+                    className="min-w-[600px] grid grid-cols-5 gap-4 items-center border-b border-gray-300 dark:border-gray-700 py-2 px-2"
                   >
                     <div className="truncate font-medium">{entry.label}</div>
                     <div>

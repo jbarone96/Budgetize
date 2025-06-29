@@ -38,6 +38,20 @@ const formatCurrency = (value: number) => {
 };
 
 const Spending = () => {
+  const [responsiveRadius, setResponsiveRadius] = useState(130);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 640) setResponsiveRadius(90);
+      else if (width < 768) setResponsiveRadius(110);
+      else setResponsiveRadius(130);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const [spendingData, setSpendingData] = useState<
     { category: string; amount: number }[]
   >([]);
@@ -206,8 +220,11 @@ const Spending = () => {
               Spending by Category
             </h2>
             {hasData ? (
-              <div className="w-full max-w-3xl h-[500px]">
-                <ResponsiveContainer width="100%" height="100%">
+              <div
+                className="w-full max-w-3xl hidden sm:block"
+                style={{ height: 300 }}
+              >
+                <ResponsiveContainer width="100%" height={300}>
                   <PieChart>
                     <Pie
                       data={spendingData}
@@ -215,9 +232,9 @@ const Spending = () => {
                       nameKey="category"
                       cx="50%"
                       cy="50%"
-                      innerRadius={100}
-                      outerRadius={130}
-                      paddingAngle={10}
+                      innerRadius={110}
+                      outerRadius={responsiveRadius}
+                      paddingAngle={12}
                       isAnimationActive={true}
                       label={({ name, percent }) =>
                         `${name}: ${(percent * 100).toFixed(0)}%`

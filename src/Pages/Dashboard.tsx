@@ -176,9 +176,11 @@ function Dashboard() {
     .map(([, value]) => value);
 
   return (
-    <div className="min-h-screen flex bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
-      <Sidebar />
-      <main className="flex-1 px-6 py-8">
+    <div className="min-h-screen flex flex-col lg:flex-row bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+      <div className="w-full lg:w-64 flex-shrink-0">
+        <Sidebar />
+      </div>
+      <main className="flex-1 w-full px-4 sm:px-6 lg:px-8 py-8">
         <h1 className="text-3xl font-bold mb-1">Dashboard</h1>
 
         {!user && (
@@ -189,7 +191,7 @@ function Dashboard() {
           </div>
         )}
 
-        <div className="mb-6 flex gap-4 justify-end">
+        <div className="mb-6 flex flex-col sm:flex-row gap-4 justify-end">
           <select
             value={selectedMonth ?? ""}
             onChange={(e) => setSelectedMonth(parseInt(e.target.value))}
@@ -265,7 +267,7 @@ function Dashboard() {
                     innerRadius={90}
                     outerRadius={110}
                     fill="#8884d8"
-                    paddingAngle={8}
+                    paddingAngle={18}
                     labelLine={false}
                     dataKey="value"
                     label={({ name, value }: { name: string; value: number }) =>
@@ -285,6 +287,7 @@ function Dashboard() {
                       backgroundColor: "#1f2937",
                       color: "#f9fafb",
                       border: "none",
+                      zIndex: 40,
                     }}
                     itemStyle={{ color: "#f9fafb" }}
                     labelStyle={{ color: "#f9fafb" }}
@@ -317,6 +320,7 @@ function Dashboard() {
                       backgroundColor: "#ffffff",
                       color: "#000000",
                       border: "none",
+                      zIndex: 40,
                     }}
                     labelStyle={{
                       color: "var(--tw-text-opacity,1)",
@@ -351,20 +355,20 @@ function Dashboard() {
 
         <section>
           <h2 className="text-2xl font-bold mb-4">Recent Transactions</h2>
-          <div className="bg-white dark:bg-gray-800 shadow rounded-lg overflow-hidden">
+          <div className="bg-white dark:bg-gray-800 shadow rounded-lg overflow-x-auto">
             <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
               <thead className="bg-gray-100 dark:bg-gray-700">
                 <tr>
-                  <th className="px-6 py-3 text-left text-sm font-medium text-gray-600 dark:text-gray-300">
+                  <th className="px-4 sm:px-6 py-3 text-left text-sm font-medium text-gray-600 dark:text-gray-300">
                     Date
                   </th>
-                  <th className="px-6 py-3 text-left text-sm font-medium text-gray-600 dark:text-gray-300">
+                  <th className="px-4 sm:px-6 py-3 text-left text-sm font-medium text-gray-600 dark:text-gray-300">
                     Description
                   </th>
-                  <th className="px-6 py-3 text-left text-sm font-medium text-gray-600 dark:text-gray-300">
+                  <th className="px-4 sm:px-6 py-3 text-left text-sm font-medium text-gray-600 dark:text-gray-300">
                     Category
                   </th>
-                  <th className="px-6 py-3 text-right text-sm font-medium text-gray-600 dark:text-gray-300">
+                  <th className="px-4 sm:px-6 py-3 text-right text-sm font-medium text-gray-600 dark:text-gray-300">
                     Amount
                   </th>
                 </tr>
@@ -373,17 +377,21 @@ function Dashboard() {
                 {filteredEntries.length > 0 ? (
                   filteredEntries.slice(0, 5).map((entry) => (
                     <tr key={entry.id}>
-                      <td className="px-6 py-4 text-sm">
+                      <td className="px-4 sm:px-6 py-4 text-sm whitespace-nowrap">
                         {new Date(entry.date).toLocaleDateString(undefined, {
                           month: "short",
                           day: "numeric",
                           year: "numeric",
                         })}
                       </td>
-                      <td className="px-6 py-4 text-sm">{entry.label}</td>
-                      <td className="px-6 py-4 text-sm">{entry.type}</td>
+                      <td className="px-4 sm:px-6 py-4 text-sm whitespace-nowrap">
+                        {entry.label}
+                      </td>
+                      <td className="px-4 sm:px-6 py-4 text-sm whitespace-nowrap">
+                        {entry.type}
+                      </td>
                       <td
-                        className={`px-6 py-4 text-sm text-right ${
+                        className={`px-4 sm:px-6 py-4 text-sm text-right whitespace-nowrap ${
                           entry.type === "Income"
                             ? "text-green-800 dark:text-green-700"
                             : "text-red-500 dark:text-red-400"

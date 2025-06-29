@@ -133,14 +133,21 @@ const Transactions = () => {
     }
   };
 
-  const handleClearForm = () => {
-    setNewTransaction({ date: "", description: "", amount: 0, category: "" });
-    setFieldErrors({
-      date: false,
-      description: false,
-      amount: false,
-      category: false,
-    });
+  const formatDisplayDate = (value: string) => {
+    const parts = value.split(/[\/-]/);
+    if (parts.length === 3) {
+      let [a, b, c] = parts;
+      if (a.length === 4) {
+        return `${b.padStart(2, "0")}-${c.padStart(2, "0")}-${a}`;
+      } else {
+        return `${a.padStart(2, "0")}-${b.padStart(2, "0")}-${c}`;
+      }
+    }
+    return value;
+  };
+
+  const capitalizeDescription = (text: string) => {
+    return text.replace(/\b\w/g, (c) => c.toUpperCase());
   };
 
   const sortedTransactions = [...transactions];
@@ -166,119 +173,70 @@ const Transactions = () => {
     );
   };
 
-  const formatDisplayDate = (value: string) => {
-    const parts = value.split(/[\/\-]/);
-    if (parts.length === 3) {
-      let [a, b, c] = parts;
-      if (a.length === 4) {
-        return `${b.padStart(2, "0")}-${c.padStart(2, "0")}-${a}`;
-      } else {
-        return `${a.padStart(2, "0")}-${b.padStart(2, "0")}-${c}`;
-      }
-    }
-    return value;
-  };
-
-  const capitalizeDescription = (text: string) => {
-    return text.replace(/\b\w/g, (c) => c.toUpperCase());
-  };
-
   const renderTransactions = () => {
-    if (error) {
-      return (
-        <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
-          <p className="text-center text-red-600 dark:text-red-400">{error}</p>
-        </div>
-      );
-    }
-
-    if (loading && transactions.length === 0) {
+    if (error || loading || transactions.length === 0) {
       return (
         <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
           <p className="text-center text-gray-600 dark:text-gray-400">
-            Loading transactions...
-          </p>
-        </div>
-      );
-    }
-
-    if (!loading && transactions.length === 0) {
-      return (
-        <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
-          <p className="text-center text-gray-600 dark:text-gray-400">
-            No transactions found.
+            {error ||
+              (loading ? "Loading transactions..." : "No transactions found.")}
           </p>
         </div>
       );
     }
 
     return (
-      <>
-        <div className="flex justify-end mb-4">
-          <button
-            className="text-sm text-gray-900 dark:text-white border border-gray-300 dark:border-white px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-white dark:hover:text-gray-900 flex items-center gap-2"
-            onClick={toggleSortDirection}
-          >
-            {sortConfig?.direction === "asc" ? (
-              <FaSortAmountUp className="text-inherit" />
-            ) : (
-              <FaSortAmountDown className="text-inherit" />
-            )}
-            {sortConfig?.direction === "asc" ? "Ascending" : "Descending"}
-          </button>
-        </div>
-        <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6 overflow-x-auto">
-          <table className="min-w-full table-auto">
-            <thead className="bg-gray-100 dark:bg-gray-700">
-              <tr>
-                <th className="px-4 py-2 text-left text-gray-600 dark:text-gray-300">
-                  Date
-                </th>
-                <th className="px-4 py-2 text-left text-gray-600 dark:text-gray-300">
-                  Description
-                </th>
-                <th className="px-4 py-2 text-left text-gray-600 dark:text-gray-300">
-                  Category
-                </th>
-                <th className="px-4 py-2 text-left text-gray-600 dark:text-gray-300">
-                  Amount
-                </th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-100 dark:divide-gray-700">
-              {sortedTransactions.map((txn) => (
-                <tr key={txn.id} className="group">
-                  <td className="px-4 py-2">{txn.date}</td>
-                  <td className="px-4 py-2">{txn.description}</td>
-                  <td className="px-4 py-2">{txn.category}</td>
-                  <td
-                    className={`px-4 py-2 font-medium ${
-                      txn.category === "Expense"
-                        ? "text-red-600 dark:text-red-400"
-                        : "text-green-800 dark:text-green-400"
-                    }`}
+      <div className="overflow-x-auto">
+        <table className="min-w-full table-auto">
+          <thead className="bg-gray-100 dark:bg-gray-700">
+            <tr>
+              <th className="px-4 py-2 text-left text-gray-600 dark:text-gray-300">
+                Date
+              </th>
+              <th className="px-4 py-2 text-left text-gray-600 dark:text-gray-300">
+                Description
+              </th>
+              <th className="px-4 py-2 text-left text-gray-600 dark:text-gray-300">
+                Category
+              </th>
+              <th className="px-4 py-2 text-left text-gray-600 dark:text-gray-300">
+                Amount
+              </th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-100 dark:divide-gray-700">
+            {sortedTransactions.map((txn) => (
+              <tr key={txn.id} className="group">
+                <td className="px-4 py-2">{txn.date}</td>
+                <td className="px-4 py-2">{txn.description}</td>
+                <td className="px-4 py-2">{txn.category}</td>
+                <td
+                  className={`px-4 py-2 font-medium whitespace-nowrap ${
+                    txn.category === "Expense"
+                      ? "text-red-600 dark:text-red-400"
+                      : "text-green-800 dark:text-green-400"
+                  }`}
+                >
+                  {txn.category === "Expense" ? "-" : "+"}$
+                  {Math.abs(txn.amount).toLocaleString(undefined, {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2,
+                  })}
+                </td>
+                <td className="px-4 py-2 text-right">
+                  <button
+                    onClick={() => deleteTransaction(txn.id)}
+                    className="invisible group-hover:visible text-red-500 hover:text-red-700 transition-colors"
                   >
-                    {txn.category === "Expense" ? "-" : "+"}$
-                    {Math.abs(txn.amount).toLocaleString(undefined, {
-                      minimumFractionDigits: 2,
-                      maximumFractionDigits: 2,
-                    })}
-                  </td>
-                  <td className="px-4 py-2 text-right">
-                    <button
-                      onClick={() => deleteTransaction(txn.id)}
-                      className="invisible group-hover:visible text-red-500 hover:text-red-700 transition-colors"
-                    >
-                      <FaTrash />
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </>
+                    <FaTrash />
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     );
   };
 
@@ -294,7 +252,7 @@ const Transactions = () => {
           </span>
         </div>
 
-        <div className="mb-4">
+        <div className="mb-4 flex justify-between items-center">
           <button
             className={`px-4 py-2 rounded text-white ${
               formVisible
@@ -304,6 +262,18 @@ const Transactions = () => {
             onClick={() => setFormVisible(!formVisible)}
           >
             {formVisible ? "Cancel" : "Add a Transaction"}
+          </button>
+
+          <button
+            className="text-sm text-gray-900 dark:text-white border border-gray-300 dark:border-white px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-white dark:hover:text-gray-900 flex items-center gap-2"
+            onClick={toggleSortDirection}
+          >
+            {sortConfig?.direction === "asc" ? (
+              <FaSortAmountUp />
+            ) : (
+              <FaSortAmountDown />
+            )}
+            {sortConfig?.direction === "asc" ? "Ascending" : "Descending"}
           </button>
         </div>
 

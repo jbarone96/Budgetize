@@ -22,7 +22,7 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
         <Header />
-        <main className="flex-1">
+        <main className="flex-1 px-4 py-6">
           <Routes>
             <Route path="/" element={<Navigate to="/dashboard" replace />} />
             <Route path="/signin" element={<Signin />} />
